@@ -1,0 +1,68 @@
+/* Universal selector */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Element selectors */
+  body {
+    background-color: #fdf6e3;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* ID selector */
+  #welcome {
+    color: rgb(60, 60, 60);
+    position: relative;
+    font-weight: bold;
+  }
+  
+  /* Class selector is in the internal CSS (.description) */
+  
+  /* Button styling with transparency using rgba */
+  #visitBtn {
+    background-color: rgba(139, 69, 19, 0.8);
+    color: rgb(45, 16, 193);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* CSS Combinators */
+  /* Descendant selector */
+  div ul li {
+    margin-left: 20px;
+    color: hsl(30, 50%, 40%);
+  }
+  
+  /* Adjacent sibling selector */
+  h2 + ul {
+    background-color: #ffe4c4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Child selector */
+div > ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* General sibling selector */
+blockquote ~ #visitBtn {
+  border: 2px dashed #8B4513;
+  background-color: hsla(30, 100%, 50%, 0.7);
+}
+  
